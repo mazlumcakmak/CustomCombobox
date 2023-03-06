@@ -1,0 +1,51 @@
+{
+    "id": "com.mazlum.sap.customCombobox",
+    "version": "1.0.0",
+    "name": "Custom Combobox",
+    "description": "Custom Combobox",
+    "newInstancePrefix": "CustomCombobox",
+    "vendor": "Mazlum Çakmak",
+    "eula": "",
+    "license": "",
+    "icon": "https:\/\/raw.githubusercontent.com\/mazlumcakmak\/CustomCombobox\/main\/icon.png",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "com-mazlum-sap-customCombobox",
+            "url": "https:\/\/cdn.jsdelivr.net\/gh\/mazlumcakmak\/CustomCombobox\/CustomCombobox.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        },
+        {
+            "kind": "builder",
+            "tag": "com-mazlum-sap-customCombobox-builder",
+            "url": "https:\/\/cdn.jsdelivr.net\/gh\/mazlumcakmak\/CustomCombobox\/CustomCombobox_Builder.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "Dimesion": {
+            "description": "Selected Version",
+            "type": "string",
+            "default": "Version"
+        },
+        "Limit": {
+            "description": "Member Limit",
+            "type": "integer",
+            "default": "200"
+        }
+    },
+    "methods": {
+        "getMembers": {
+			"returnType": "string",
+            "description": "Get Members", 
+            "body": "return this.getMembers;"
+        } 
+    },
+    "events": {
+        "onClick": {
+            "description": "User Clicked."
+        }
+    }
+}
